@@ -1,0 +1,48 @@
+# YOLOv5 🚀 by Ultralytics, GPL-3.0 license
+# Hyperparameters for low-augmentation COCO training from scratch
+# python train.py --batch 64 --cfg yolov5n6.yaml --weights '' --data coco.yaml --img 640 --epochs 300 --linear
+# See tutorials for hyperparameter evolution https://github.com/ultralytics/yolov5#tutorials
+# python train.py --epochs 100 --weights 'runs\train\exp5\weights\best.pt'
+# python train.py --batch 128 --weights runs\train\exp5\weights\best.pt --epochs 50 --img 200 --hyp hyp.scratch-med.yaml --evolve
+# YOLOv5 Hyperparameter Evolution Results
+# Best generation: 19
+# Last generation: 29
+#    metrics/precision,       metrics/recall,      metrics/mAP_0.5, metrics/mAP_0.5:0.95,         val/box_loss,         val/obj_loss,         val/cls_loss
+#              0.76049,              0.70829,              0.77545,              0.40712,             0.032325,            0.0021092,           0.00023293
+
+lr0: 0.00725
+lrf: 0.01064
+momentum: 0.91129
+weight_decay: 0.00079
+warmup_epochs: 2.6863
+warmup_momentum: 0.61794
+warmup_bias_lr: 0.11288
+box: 0.04363
+cls: 0.51532
+cls_pw: 0.97264
+obj: 1.1265
+obj_pw: 0.99451
+iou_t: 0.2
+anchor_t: 2.8562
+fl_gamma: 1.2
+hsv_h: 0.01539
+hsv_s: 0.63017
+hsv_v: 0.37812
+degrees: 0.0
+translate: 0.08557
+scale: 0.59547
+shear: 0.0
+perspective: 0.0
+flipud: 0.0
+fliplr: 0.5
+mosaic: 0.7168
+mixup: 0.0
+copy_paste: 0.0
+rir_INTER_NEAREST: 1.0314
+rir_INTER_LINEAR: 0.69397
+rir_INTER_CUBIC: 1.1949
+rir_INTER_AREA: 0.73225
+rir_INTER_LANCZOS4: 1.1773
+rir_INTER_LINEAR_EXACT: 0.86377
+anchors: 3.0
+
